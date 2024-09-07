@@ -23,7 +23,7 @@ li {
 
 .main {
     width: 100%;
-    height: 945px;
+    height: 955px;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/bg.jpg) no-repeat;
     background-size: cover;
     color: white;
@@ -31,7 +31,7 @@ li {
 
 .introduction {
     width: 800px;
-    height: 945px;
+    height: 955px;
     margin: 0 auto;
     text-align: center;
     display: flex;
@@ -42,24 +42,67 @@ li {
 .text {
     font-size: 20px;
     line-height: 24pt;
+    -webkit-user-select: none !important;
+    -moz-user-select: -moz-none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+.en{
+    display: none;
+    font-size: 20px;
+    line-height: 24pt;
+    -webkit-user-select: none !important;
+    -moz-user-select: -moz-none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
 }
 
+.btn-en:hover, .btn-ko:hover {
+    background-color: black;
+    color: white;
+
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+}
+.view-work2{
+    display: none;
+
+    margin-left: 35%;
+    margin-top: 50px;
+    font-size: 30px;
+    width: 250px;
+    height: 60px;
+
+    background-color: transparent;
+    color: white;
+
+    border: 3px solid white;
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .main .view-work {
     margin-left: 35%;
     margin-top: 50px;
     font-size: 30px;
     width: 250px;
     height: 60px;
-    border-radius: 30px;
+
     background-color: transparent;
     color: white;
+
     border: 3px solid white;
+    border-radius: 30px;
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.main .view-work:hover {
+.main .view-work:hover, .view-work2:hover {
     background-color: white;
     color: black;
 
@@ -71,19 +114,39 @@ li {
 header {
     width: 100%;
     height: 75px;
-    border: 1px solid black;
+
+    position: relative;
+    top: -955px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+    width: 150px;
+    height: 75px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+
+    -webkit-user-select: none !important;
+    -moz-user-select: -moz-none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+
+.logo a {
+    font-size: 50px;
+    color: white;
 }
 
 .fixed {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
 }
 
 .menu {
@@ -92,11 +155,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 65px;
 }
 
 .menu li {
     width: 100px;
     height: 50px;
+}
+
+.m1 .M{
+    color: black;
+    background-color: white;
 }
 
 .menu li a {
@@ -152,4 +221,89 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.menu-logo img{
+    width: 50px;
+    height: 50px;
+    margin-right: 25px;
+    cursor: pointer;
+    -webkit-user-select: none !important;
+    -moz-user-select: -moz-none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+.menu-logo-close{
+    width: 100%;
+    height: 75px;
+    
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.menu-logo-close img{
+    width: 75px;
+    height: 75px;
+    margin-right: 14px;
+    cursor: pointer;
+    -webkit-user-select: none !important;
+    -moz-user-select: -moz-none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+
+.main-menu {
+    display: none; /* 처음에는 숨겨져 있음 */
+    position: fixed; /* 화면에 고정되도록 설정 */
+    top: 0;
+    right: 0; /* 메뉴가 오른쪽에서 시작되도록 설정 */
+    z-index: 10; /* 다른 요소들보다 위에 표시되도록 설정 */
+    width: 100%;
+    height: 100%;
+}
+.mm{
+    width: 100%;
+    height: 100%;
+}
+.mm .l{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .4;
+}
+.mm .r {
+    width: 150px;
+    height: 100%;
+    background-color: white;
+    position: absolute; /* 위치를 절대값으로 설정 */
+    right: -550px; /* 처음에 화면 밖에 배치 */
+    top: 0;
+}
+.b{
+    width: 100%;
+    height: 100%;
+}
+.language p{
+    font-size: 16px;
+    margin-left: 20%;
+    font-weight: bold;
+}
+.lang{
+    display: none;
+}
+.btn-ko{
+    display: none;
+}
+.btn-en, .btn-ko{
+    margin-left: 20%;
+    margin-top: 5px;
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+
+    background-color: transparent;
+    color: black;
+
+    border: 3px solid black;
+    border-radius: 30px;
 }

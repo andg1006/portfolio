@@ -1,13 +1,35 @@
-$(".view-work").click(function (event) {
-    console.log(".view-work");
-    event.preventDefault();
-    $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 300);
-})
-
 $(document).ready(function () {
+    //view-work-click
+    $(".view-work, .A, .M, .S, .P, .C").click(function (event) {
+        console.log(".view-work, .A, .M, .S, .P, .C");
+        event.preventDefault();
+        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 300);
+    })
+
+    //언어
+    $(".btn-en").click(function () {
+        $("#en").css("display", "block")
+        $("#ko").css("display", "none")
+        $(".btn-ko").css("display", "block")
+        $(".btn-en").css("display", "none")
+        $(".lang2").css("display", "none")
+        $(".lang").css("display", "block")
+        $(".view-work2").css("margin-left", "30.25%")
+    });
+    $(".btn-ko").click(function () {
+        $("#ko").css("display", "block")
+        $("#en").css("display", "none")
+        $(".btn-en").css("display", "block")
+        $(".btn-ko").css("display", "none")
+        $(".lang2").css("display", "block")
+        $(".lang").css("display", "none")
+        $(".view-work").css("margin-left", "35%")
+    });
+
     var element = $("header");
     var offset = element.offset().top;
 
+    //menu-fixed
     $(window).scroll(function () {
         if ($(window).scrollTop() > offset) {
             element.addClass("fixed");
@@ -16,11 +38,10 @@ $(document).ready(function () {
             element.removeClass("fixed");
         }
     });
-});
 
-$(document).ready(function () {
+    //menu
     var M = $(".M");
-    var Main = -100;
+    var Main = -1;
     var reMain = 943;
 
     var A = $(".A");
@@ -48,7 +69,7 @@ $(document).ready(function () {
             M.css("color", "black"); // 색상 변경
         } else {
             M.css("background-color", "black");
-            M.css("color", "white");
+            M.css("color", "white", "!important");
         }
 
         //About
@@ -86,5 +107,27 @@ $(document).ready(function () {
             C.css("background-color", "black");
             C.css("color", "white");
         }
+    });
+
+    //메인메뉴 슬라이드
+    $(".menu-logo").click(function () {
+        $(".main-menu").css("display", "block");
+        setTimeout(function () {
+            $(".main-menu .l").css("display", "block")
+            $(".main-menu .r").animate({ right: "0" }, 100);
+        });
+        $(".menu-logo-close").click(function () {
+            $(".main-menu .l").css("display", "none")
+            $(".main-menu .r").animate({ right: "-550px" }, 100, function () {
+                $(".main-menu").css("display", "none");
+            });
+        });
+
+        //스크롤 잠금
+        $(".main-menu").on('scroll touchmove mousewheel', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        })
     });
 });

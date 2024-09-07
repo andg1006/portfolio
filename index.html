@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -13,20 +13,35 @@
         <div class="main" id="Main">
             <div class="introduction">
                 <div class="text">
-                    <h1>안녕하세요, 저는 <span style="color: #e31b6d;">안동근</span> 입니다.</h1>
-                    <br>
-                    <h1>이 페이지는 저의 <span style="color: #e31b6d;">포트폴리오 페이지</span>입니다.</h1>
-                    <a href="#About" class="view-work">구경하기</a>
+                    <div class="ko" id="ko">
+                        <h1>안녕하세요, 저는 <span style="color: #e31b6d;">안동근</span> 입니다.</h1>
+                        <br>
+                        <h1>이 페이지는 저의 <span style="color: #e31b6d;">포트폴리오 페이지</span>입니다.</h1>
+                    </div>
+                    <div class="en" id="en">
+                        <h1>Hello, I'm <span style="color: #e31b6d;">An Donggeun</span>.</h1>
+                        <br>
+                        <h1>This page is my <span style="color: #e31b6d;">portfolio page</span>.</h1>
+                    </div>
+                    
+                    <div class="lang2"><a href="#About" class="view-work">작품 보기</a></div>
+                    <div class="lang"><a href="#About" class="view-work2">view work</a></div>
                 </div>
             </div>
             <header>
+                <div class="logo">
+                    <a href="index.html">ADG</a>
+                </div>
                 <ul class="menu">
-                    <li><a href="#Main" class="M">Main</a></li>
+                    <li class="m1"><a href="#Main" class="M">Main</a></li>
                     <li><a href="#About" class="A">About</a></li>
                     <li><a href="#Skills" class="S">Skills</a></li>
                     <li><a href="#Portfolio" class="P">Portfolio</a></li>
                     <li><a href="#Contents" class="C">Contents</a></li>
                 </ul>
+                <div class="menu-logo">
+                    <img src="images/menu.png" alt="">
+                </div>
             </header>
         </div>
         <div class="About" id="About">
@@ -46,10 +61,30 @@
                 © 2024 An Donggeun. All Rights Reserved.</p>
         </footer>
     </div>
+    <div class="main-menu">
+        <div class="mm">
+            <div class="l"></div>
+            <div class="r">
+                <div class="t">
+                    <div class="menu-logo-close">
+                        <img src="images/menu-close.png" alt="">
+                    </div>
+                </div>
+                <div class="b">
+                    <div class="language">
+                        <p class="lang" id="en">language</p>
+                        <p class="lang2" id="ko">언어 설정</p>
+                        <button class="btn-en">영어</button>
+                        <button class="btn-ko">korea</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-        <script src="script/jquery-1.12.3.js"></script>
-        <script src="script/script.js"></script>
+    <script src="script/jquery-1.12.3.js"></script>
+    <script src="script/script.js"></script>
 </body>
 
 </html>
