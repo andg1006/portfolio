@@ -8,23 +8,95 @@ $(document).ready(function () {
 
     //언어
     $(".btn-en").click(function () {
+        //언어
         $("#en").css("display", "block")
         $("#ko").css("display", "none")
+
+        //언어 버튼
         $(".btn-ko").css("display", "block")
         $(".btn-en").css("display", "none")
-        $(".lang2").css("display", "none")
+
+        //언어
         $(".lang").css("display", "block")
+        $(".lang2").css("display", "none")
+
+        //작품보기
         $(".view-work2").css("margin-left", "30.25%")
+
+        //메뉴
+        $(".me2").css("display", "block")
+        $(".me1").css("display", "none")
+
+        //테마
+        $(".sn2").css("display", "block")
+        $(".sn").css("display", "none")
     });
     $(".btn-ko").click(function () {
+        //언어
         $("#ko").css("display", "block")
         $("#en").css("display", "none")
+
+        //언어 버튼
         $(".btn-en").css("display", "block")
         $(".btn-ko").css("display", "none")
+
+        //언어
         $(".lang2").css("display", "block")
         $(".lang").css("display", "none")
+
+        //작품보기
         $(".view-work").css("margin-left", "35%")
+        
+        //메뉴
+        $(".me1").css("display", "block")
+        $(".me2").css("display", "none")
+
+        //테마
+        $(".sn").css("display", "block")
+        $(".sn2").css("display", "none")
     });
+
+    //테마
+    $('.btn-dk').click(function() {
+        //테마
+        $(".btn-lt").css("display", "block")
+        $(".btn-dk").css("display", "none")
+        
+        //메뉴 오픈
+        $(".mi2").css("display", "block")
+        $(".mi1").css("display", "none")
+
+        //메뉴 닫기
+        $(".close2").css("display", "block")
+        $(".close").css("display", "none")
+
+        //메인 메뉴
+        $(".mm .r").css("background-color", "black")
+
+        //나머지
+        $(".btn-lt").css("background-color", "black")("border","3px","solid","black")
+    })
+    $('.btn-lt').click(function() {
+        //테마
+        $(".btn-dk").css("display", "block")
+        $(".btn-lt").css("display", "none")
+
+        //메인메뉴 버튼
+        $(".mi1").css("display", "block")
+        $(".mi2").css("display", "none")
+        $(".close").css("display", "block")
+        $(".close2").css("display", "none")
+
+        //메인 메뉴
+        $(".mm .r").css("background-color", "white")
+
+        //나머지
+        $(".screen button").css("background-color", "white")
+    })
+
+    $(".view-work, .view-work2").mouseover(function(){
+
+    })
 
     var element = $("header");
     var offset = element.offset().top;
@@ -65,47 +137,47 @@ $(document).ready(function () {
 
         //Main
         if (scrollPosition > Main && scrollPosition < reMain) {
-            M.css("background-color", "white"); // 색상 변경
-            M.css("color", "black"); // 색상 변경
+            M.css("background-color", "black"); // 색상 변경
+            M.css("color", "white"); // 색상 변경
         } else {
-            M.css("background-color", "black");
-            M.css("color", "white", "!important");
+            M.css("background-color", "white");
+            M.css("color", "black", "!important");
         }
 
         //About
         if (scrollPosition > About && scrollPosition < reAbout) {
-            A.css("background-color", "white"); // 색상 변경
-            A.css("color", "black"); // 색상 변경
+            A.css("background-color", "black"); // 색상 변경
+            A.css("color", "white"); // 색상 변경
         } else {
-            A.css("background-color", "black");
-            A.css("color", "white");
+            A.css("background-color", "white");
+            A.css("color", "black");
         }
 
         //Skills
         if (scrollPosition > Skills && scrollPosition < reSkills) {
-            S.css("background-color", "white"); // 색상 변경
-            S.css("color", "black"); // 색상 변경
+            S.css("background-color", "black"); // 색상 변경
+            S.css("color", "white"); // 색상 변경
         } else {
-            S.css("background-color", "black");
-            S.css("color", "white");
+            S.css("background-color", "white");
+            S.css("color", "black");
         }
 
         //Portfolio
         if (scrollPosition > Portfolio && scrollPosition < rePortfolio) {
-            P.css("background-color", "white"); // 색상 변경
-            P.css("color", "black"); // 색상 변경
+            P.css("background-color", "black"); // 색상 변경
+            P.css("color", "white"); // 색상 변경
         } else {
-            P.css("background-color", "black");
-            P.css("color", "white");
+            P.css("background-color", "white");
+            P.css("color", "black");
         }
 
         //Contents
         if (scrollPosition > Contents && scrollPosition < reContents) {
-            C.css("background-color", "white"); // 색상 변경
-            C.css("color", "black"); // 색상 변경
+            C.css("background-color", "black"); // 색상 변경
+            C.css("color", "white"); // 색상 변경
         } else {
-            C.css("background-color", "black");
-            C.css("color", "white");
+            C.css("background-color", "white");
+            C.css("color", "black");
         }
     });
 
@@ -114,11 +186,11 @@ $(document).ready(function () {
         $(".main-menu").css("display", "block");
         setTimeout(function () {
             $(".main-menu .l").css("display", "block")
-            $(".main-menu .r").animate({ right: "0" }, 100);
+            $(".main-menu .r").animate({ right: "0" }, 200);
         });
         $(".menu-logo-close").click(function () {
             $(".main-menu .l").css("display", "none")
-            $(".main-menu .r").animate({ right: "-550px" }, 100, function () {
+            $(".main-menu .r").animate({ right: "-550px" }, 200, function () {
                 $(".main-menu").css("display", "none");
             });
         });
