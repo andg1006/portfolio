@@ -28,8 +28,8 @@ $(document).ready(function () {
         $(".me1").css("display", "none")
 
         //테마
-        $(".sn2").css("display", "block")
-        $(".sn").css("display", "none")
+        // $(".sn2").css("display", "block")
+        // $(".sn").css("display", "none")
     });
     $(".btn-ko").click(function () {
         //언어
@@ -52,51 +52,51 @@ $(document).ready(function () {
         $(".me2").css("display", "none")
 
         //테마
-        $(".sn").css("display", "block")
-        $(".sn2").css("display", "none")
+        // $(".sn").css("display", "block")
+        // $(".sn2").css("display", "none")
     });
 
     //테마
-    $('.btn-dk').click(function() {
-        //테마
-        $(".btn-lt").css("display", "block")
-        $(".btn-dk").css("display", "none")
+    // $('.btn-dk').click(function() {
+    //     //테마
+    //     $(".btn-lt").css("display", "block")
+    //     $(".btn-dk").css("display", "none")
         
-        //메뉴 오픈
-        $(".mi2").css("display", "block")
-        $(".mi1").css("display", "none")
+    //     //메뉴 오픈
+    //     $(".mi2").css("display", "block")
+    //     $(".mi1").css("display", "none")
 
-        //메뉴 닫기
-        $(".close2").css("display", "block")
-        $(".close").css("display", "none")
+    //     //메뉴 닫기
+    //     $(".close2").css("display", "block")
+    //     $(".close").css("display", "none")
 
-        //메인 메뉴
-        $(".mm .r").css("background-color", "black")
+    //     //메인 메뉴
+    //     $(".mm .r").css("background-color", "black")
 
-        //나머지
-        $(".btn-lt").css("background-color", "black")("border","3px","solid","black")
-    })
-    $('.btn-lt').click(function() {
-        //테마
-        $(".btn-dk").css("display", "block")
-        $(".btn-lt").css("display", "none")
+    //     //나머지
+    //     $(".btn-lt").css("background-color", "black")("border","3px","solid","black")
+    // })
+    // $('.btn-lt').click(function() {
+    //     //테마
+    //     $(".btn-dk").css("display", "block")
+    //     $(".btn-lt").css("display", "none")
 
-        //메인메뉴 버튼
-        $(".mi1").css("display", "block")
-        $(".mi2").css("display", "none")
-        $(".close").css("display", "block")
-        $(".close2").css("display", "none")
+    //     //메인메뉴 버튼
+    //     $(".mi1").css("display", "block")
+    //     $(".mi2").css("display", "none")
+    //     $(".close").css("display", "block")
+    //     $(".close2").css("display", "none")
 
-        //메인 메뉴
-        $(".mm .r").css("background-color", "white")
+    //     //메인 메뉴
+    //     $(".mm .r").css("background-color", "white")
 
-        //나머지
-        $(".screen button").css("background-color", "white")
-    })
+    //     //나머지
+    //     $(".screen button").css("background-color", "white")
+    // })
 
-    $(".view-work, .view-work2").mouseover(function(){
+    // $(".view-work, .view-work2").mouseover(function(){
 
-    })
+    // })
 
     var element = $("header");
     var offset = element.offset().top;
