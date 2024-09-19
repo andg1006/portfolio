@@ -248,21 +248,26 @@ header {
     height: 450px;
 
     display: flex;
-    align-items: center;
-}
-.about-in img{
-    width: 350px;
     height: 450px;
 }
-.about-in .r{
-    width: 700px;
-    height: 450px;
+.about-in .r ul{
+    display: flex;
+}
+#ab{
+    text-align: end;
+    width: 120px;
+}
+#ab2{
+    margin-left: 30px;
 }
 .about-in .r li{
     font-size: 20px;
     font-weight: bold;
     line-height: 2;
     color: gray;
+}
+.about-in .my2{
+    display: none;
 }
 
 /* Skills */

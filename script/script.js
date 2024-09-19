@@ -27,6 +27,10 @@ $(document).ready(function () {
         $(".me2").css("display", "block")
         $(".me1").css("display", "none")
 
+        //소개
+        $(".my2").css("display", "block")
+        $(".my").css("display", "none")
+
         //테마
         // $(".sn2").css("display", "block")
         // $(".sn").css("display", "none")
@@ -50,6 +54,10 @@ $(document).ready(function () {
         //메뉴
         $(".me1").css("display", "block")
         $(".me2").css("display", "none")
+
+        //소개
+        $(".my").css("display", "block")
+        $(".my2").css("display", "none")
 
         //테마
         // $(".sn").css("display", "block")
@@ -140,7 +148,7 @@ $(document).ready(function () {
             M.css("background-color", "black"); // 색상 변경
             M.css("color", "white"); // 색상 변경
         } else {
-            M.css("background-color", "white");
+            M.css("background-color", "white", "!important");
             M.css("color", "black", "!important");
         }
 
@@ -180,6 +188,26 @@ $(document).ready(function () {
             C.css("color", "black");
         }
     });
+
+    //메뉴 호버 ko
+    $(".menu>li>a").mouseover(function(){
+        $(this).css("background-color", "black");
+        $(this).css("color", "white");;
+    })
+    $(".menu>li>a").mouseleave(function(){
+        $(this).css("background-color", "white");
+        $(this).css("color", "black");;
+    })
+
+    //메뉴 호버 en
+    $(".menu2>li>a").mouseover(function(){
+        $(this).css("background-color", "black");
+        $(this).css("color", "white");;
+    })
+    $(".menu2>li>a").mouseleave(function(){
+        $(this).css("background-color", "white");
+        $(this).css("color", "black");;
+    })
 
     //메인메뉴 슬라이드
     $(".menu-logo").click(function () {
