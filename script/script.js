@@ -129,16 +129,16 @@ $(document).ready(function () {
     var reAbout = 1818;
 
     var S = $(".S");
-    var Skills = 1817;
-    var reSkills = 2769;
+    var Skills = 1917;
+    var reSkills = 2890;
 
     var P = $(".P");
-    var Portfolio = 2768;
-    var rePortfolio = 3729;
+    var Portfolio = 3475;
+    var rePortfolio = 4435;
 
     var C = $(".C");
-    var Contents = 3728;
-    var reContents = 4000;
+    var Contents = 4435;
+    var reContents = 5000;
 
     $(window).scroll(function () {
         var scrollPosition = $(window).scrollTop();
@@ -190,24 +190,24 @@ $(document).ready(function () {
     });
 
     //메뉴 호버 ko
-    $(".menu>li>a").mouseover(function(){
-        $(this).css("background-color", "black");
-        $(this).css("color", "white");;
-    })
-    $(".menu>li>a").mouseleave(function(){
-        $(this).css("background-color", "white");
-        $(this).css("color", "black");;
-    })
+    // $(".menu>li>a").mouseover(function(){
+    //     $(this).css("background-color", "black");
+    //     $(this).css("color", "white");;
+    // })
+    // $(".menu>li>a").mouseleave(function(){
+    //     $(this).css("background-color", "white");
+    //     $(this).css("color", "black");;
+    // })
 
-    //메뉴 호버 en
-    $(".menu2>li>a").mouseover(function(){
-        $(this).css("background-color", "black");
-        $(this).css("color", "white");;
-    })
-    $(".menu2>li>a").mouseleave(function(){
-        $(this).css("background-color", "white");
-        $(this).css("color", "black");;
-    })
+    // //메뉴 호버 en
+    // $(".menu2>li>a").mouseover(function(){
+    //     $(this).css("background-color", "black");
+    //     $(this).css("color", "white");;
+    // })
+    // $(".menu2>li>a").mouseleave(function(){
+    //     $(this).css("background-color", "white");
+    //     $(this).css("color", "black");;
+    // })
 
     //메인메뉴 슬라이드
     $(".menu-logo").click(function () {
